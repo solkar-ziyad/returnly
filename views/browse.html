@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returnly | Browse</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="/" class="brand" aria-label="Returnly home">
+          <span class="brand-mark">R</span>
+          <span>Returnly</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          {{NAV}}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="page-header">
+            <span class="eyebrow">Browse listings</span>
+            <h2>Recovered and reported items</h2>
+          </div>
+
+          <div class="filter-card">
+            <form method="get" action="/browse" class="toolbar">
+              <div class="field" style="min-width: 240px; flex: 1;">
+                <label for="q">Search</label>
+                <input id="q" name="q" type="text" value="{{QUERY}}" placeholder="Search by item, location, or keyword" />
+              </div>
+              <div class="field" style="min-width: 150px;">
+                <label for="type">Type</label>
+                <select id="type" name="type">
+                  <option value="all" {{TYPE_ALL}}>All</option>
+                  <option value="lost" {{TYPE_LOST}}>Lost</option>
+                  <option value="found" {{TYPE_FOUND}}>Found</option>
+                </select>
+              </div>
+              <div class="field" style="min-width: 200px;">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                  {{CATEGORY_OPTIONS}}
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" style="align-self: end;">Apply</button>
+            </form>
+          </div>
+
+          <div class="grid items-grid">
+            {{ITEM_CARDS}}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 Returnly</span>
+        <span>Lost &amp; Found for public spaces</span>
+      </div>
+    </footer>
+  </body>
+</html>

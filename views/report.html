@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returnly | Report</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="/" class="brand" aria-label="Returnly home">
+          <span class="brand-mark">R</span>
+          <span>Returnly</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          {{NAV}}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="form-shell">
+            <div class="form-header">
+              <span class="eyebrow">Report a new item</span>
+              <h2>{{TYPE_LABEL}}</h2>
+            </div>
+
+            <form method="post" action="{{FORM_ACTION}}" class="form-row">
+              <div class="field">
+                <label for="title">Item title</label>
+                <input id="title" name="title" type="text" value="{{TITLE_VALUE}}" />
+                <div class="form-error">{{TITLE_ERROR}}</div>
+              </div>
+
+              <div class="field">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                  {{CATEGORY_OPTIONS}}
+                </select>
+                <div class="form-error">{{CATEGORY_ERROR}}</div>
+              </div>
+
+              <div class="field">
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" value="{{LOCATION_VALUE}}" />
+                <div class="form-error">{{LOCATION_ERROR}}</div>
+              </div>
+
+              <div class="field">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" value="{{DATE_VALUE}}" />
+                <div class="form-error">{{DATE_ERROR}}</div>
+              </div>
+
+              <div class="field">
+                <label for="description">Description</label>
+                <textarea id="description" name="description">{{DESCRIPTION_VALUE}}</textarea>
+                <div class="form-error">{{DESCRIPTION_ERROR}}</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit report</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 Returnly</span>
+        <span>Lost &amp; Found for public spaces</span>
+      </div>
+    </footer>
+  </body>
+</html>

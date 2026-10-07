@@ -1,0 +1,34 @@
+[
+  {
+    "id": "user_admin",
+    "name": "Returnly Admin",
+    "email": "admin@returnly.demo",
+    "passwordHash": "$2a$10$cBz0gzBEh.9dPBIToQn4K.83DZU4Y5SgaF8T3Nupkns/SR1GKPtgi",
+    "role": "admin",
+    "createdAt": "2026-01-15T09:00:00.000Z"
+  },
+  {
+    "id": "user_alex",
+    "name": "Alex Chen",
+    "email": "alex@student.demo",
+    "passwordHash": "$2a$10$lkmWSRwtL20.oAqbchtEF.vBWZ5e8yUI/67g2q/YZLGfzYc4cWwZa",
+    "role": "user",
+    "createdAt": "2026-02-09T14:20:00.000Z"
+  },
+  {
+    "id": "user_maria",
+    "name": "Maria Lopez",
+    "email": "maria@campus.demo",
+    "passwordHash": "$2a$10$79lLVIB6ueO4rNBTVxWduOedW58OhwVHft40yw.oynkf56t7YPNCS",
+    "role": "user",
+    "createdAt": "2026-02-14T10:40:00.000Z"
+  },
+  {
+    "id": "user_1790507828266_kkd7ou",
+    "name": "lupi",
+    "email": "lupi@gmail.com",
+    "passwordHash": "$2a$10$SSrWDXA/G9mYvgK6FmnDPO7FJ6Zfuh2r0Lr2hpPYp4Z3zRWBMWUSe",
+    "role": "user",
+    "createdAt": "2026-09-27T11:17:08.345Z"
+  }
+]

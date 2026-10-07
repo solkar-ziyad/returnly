@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returnly | Admin Login</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="admin-shell">
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="/" class="brand" aria-label="Returnly home">
+          <span class="brand-mark">R</span>
+          <span>Returnly</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/">Public site</a>
+          <a href="/admin/login" class="nav-action primary">Admin Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="form-shell" style="max-width: 520px; background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.12); color: #fff;">
+            <div class="form-header">
+              <span class="eyebrow" style="background: rgba(255,255,255,0.1); color: #e2f5f8;">Secure admin</span>
+              <h2 style="color: #fff;">Admin access</h2>
+            </div>
+
+            <form method="post" action="/admin/login" class="form-row">
+              <div class="field">
+                <label for="email" style="color: #fff;">Email</label>
+                <input id="email" name="email" type="email" value="{{EMAIL_VALUE}}" placeholder="admin@returnly.demo" />
+              </div>
+              <div class="field">
+                <label for="password" style="color: #fff;">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter admin password" />
+              </div>
+              <div class="form-error" style="color: #ffb5b5;">{{LOGIN_ERROR}}</div>
+              <button type="submit" class="btn btn-accent">Log in to dashboard</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 Returnly</span>
+        <span>Admin portal</span>
+      </div>
+    </footer>
+  </body>
+</html>

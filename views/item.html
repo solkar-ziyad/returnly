@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returnly | {{ITEM_TITLE}}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="/" class="brand" aria-label="Returnly home">
+          <span class="brand-mark">R</span>
+          <span>Returnly</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          {{NAV}}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="form-shell">
+            <div class="page-header">
+              <span class="eyebrow">{{ITEM_TYPE}}</span>
+              <h2>{{ITEM_TITLE}}</h2>
+            </div>
+
+            <div class="item-meta" style="margin-bottom: 16px;">
+              <span class="badge {{ITEM_TYPE}}">{{ITEM_TYPE}}</span>
+              <span>{{ITEM_CATEGORY}}</span>
+            </div>
+
+            <p style="margin-bottom: 16px;">{{ITEM_DESCRIPTION}}</p>
+
+            <div class="list-inline" style="margin-bottom: 16px;">
+              <strong>Location:</strong> <span>{{ITEM_LOCATION}}</span>
+            </div>
+            <div class="list-inline" style="margin-bottom: 16px;">
+              <strong>Date:</strong> <span>{{ITEM_DATE}}</span>
+            </div>
+            <div class="list-inline" style="margin-bottom: 24px;">
+              <strong>Status:</strong> {{ITEM_STATUS}}
+            </div>
+
+            <a href="/browse" class="btn btn-secondary">Back to browse</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 Returnly</span>
+        <span>Lost &amp; Found for public spaces</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "returnly-demo",
+  "version": "1.0.0",
+  "description": "Returnly digital lost and found demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "lost-and-found",
+    "demo"
+  ],
+  "author": "Returnly",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}

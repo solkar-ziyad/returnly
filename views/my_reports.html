@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returnly | My Reports</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="/" class="brand" aria-label="Returnly home">
+          <span class="brand-mark">R</span>
+          <span>Returnly</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          {{NAV}}
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="page-header">
+            <span class="eyebrow">My reports</span>
+            <h2>Submitted items</h2>
+          </div>
+
+          <div class="filter-card">
+            <table style="width: 100%; border-collapse: collapse;">
+              <thead>
+                <tr>
+                  <th style="text-align: left; padding-bottom: 12px;">Title</th>
+                  <th style="text-align: left; padding-bottom: 12px;">Type</th>
+                  <th style="text-align: left; padding-bottom: 12px;">Category</th>
+                  <th style="text-align: left; padding-bottom: 12px;">Location</th>
+                  <th style="text-align: left; padding-bottom: 12px;">Status</th>
+                  <th style="text-align: left; padding-bottom: 12px;">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{REPORT_ROWS}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>© 2026 Returnly</span>
+        <span>Lost &amp; Found for public spaces</span>
+      </div>
+    </footer>
+  </body>
+</html>
